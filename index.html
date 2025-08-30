@@ -22,7 +22,7 @@
     .characters {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(2,200px);
+      grid-auto-rows: auto;
       gap: 40px 20px;
       width: 80%;
       margin: 180px auto 0 auto;
@@ -55,6 +55,16 @@
     .character p {
       font-size: 0.9em;
       line-height: 1.4;
+    }
+    @media (max-width: 900px) {
+      .characters {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 500px) {
+      .characters {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
