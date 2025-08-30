@@ -75,19 +75,23 @@
     }
   </style>
   <script>
-    window.addEventListener('load',() => {
+    function adjustBoxWidths(){
         const characters = document.querySelectorAll('.character');
         let maxWidth = 0;
 
         characters.forEach(box => {
+            box.style.width = 'auto';
             const boxWidth = box.offsetWidth;
             if (boxWidth > maxWidth) maxWidth = boxWidth;
         });
-      
         characters.forEach(box => {
             box.style.width = maxWidth + 'px';
         });
-    });
+    }
+        window.addEventListener('load',adjustBoxWidths);
+
+        window.addEventListener('resize',adjustBoxWidths);
+    
   </script>
 </head>
 <body>
