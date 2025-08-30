@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>HTMLの練習</title>
+  <style>
+    body {
+      font-family: "Hiragino Maru Gothic ProN","Comic Sans MS",sans-serif;
+      background-color: #fff0f6;
+      margin: 0;
+      padding: 20px;
+      color: #444;
+    }
+    h1{
+      text-align: center;
+      color: #ff66aa;
+      font-size: 2.5em;
+      margin-top: 50px;
+      margin-bottom: 30px;
+      text-shadow: 2px 2px #ffd6e7;
+    }
+    .characters {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2,200px);
+      gap: 40px 20px;
+      width: 80%;
+      margin: 180px auto 0 auto;
+    }
+    .character {
+      background-color: #fff;
+      border: 3px solid #ffb6c1;
+      border-radius: 20px;
+      padding: 15px;
+    }
+    .character:hover {
+      transform: scale(1.05);
+    }
+    .character h2 {
+      color: #ff69b4;
+      margin-bottom: 10px;
+    }
+    .name-with-icon {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+    }
+    .icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .character p {
+      font-size: 0.9em;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>イかれたドュー族のメンバー紹介</h1>
+  
+  <div class="characters">
+    <div class="character">
+      <div class="name-with-icon">
+        <h2>ドュー</h2>
+        <img src="images/doxyu.png" alt="ドューアイコン" class="icon">
+      </div>
+        <p>族長。大人の玩具店にキャリーケースで行くほどの熱意。</p>
+    </div>
+    <div class="character">
+      <div class="name-with-icon">
+        <h2>じーずー</h2>
+        <img src="images/zezu icon.png" alt="じーずーアイコン" class="icon">
+      </div>
+        <p>心優しきブロスタ博士。年中ガチバトルを一人でプレイしており、大事な感情が欠落している。</p>
+    </div>
+    <div class="character">
+      <div class="name-with-icon">
+        <h2>まろん</h2>
+        <img src="images/maron icon.png" alt="まろんアイコン" class="icon">
+      </div>
+        <p>口が悪い。暴言ばかりの乱暴者。</p>
+    </div>
+    <div class="character">
+      <div class="name-with-icon">
+        <h2>かとり</h2>
+        <img src="images/katori icon.png" alt="かとりアイコン" class="icon">
+      </div>
+        <p>ネトレンマスター。彼女がUberEats漬けで困っている。</p>
+    </div>
+    <div class="character">
+      <div class="name-with-icon">
+        <h2>ななもり</h2>
+        <img src="images/nana icon.png" alt="ななもりアイコン" class="icon">
+      </div>
+        <p>不憫な社畜。麻雀をしたら放銃しないのにボロ負けしている。</p>
+    </div>
+    <div class="character">
+      <div class="name-with-icon">
+        <h2>しぇる</h2>
+        <img src="images/shel icon.png" alt="しぇるアイコン" class="icon">
+      </div>
+        <p>チンカス。ネットリテラシー皆無なくせにネトレンを楽しんでいる。</p>
+    </div>
+    <div class="character">
+      <div class="name-with-icon">
+        <h2>あるてみす</h2>
+        <img src="images/artemis icon.png" alt="あるてみすアイコン" class="icon">
+      </div>
+        <p>ゴミ。</p>
+    </div>
+    <div class="character">
+      <div class="name-with-icon">
+        <h2>あんぽん</h2>
+        <img src="images/anpon icon.png" alt="あんぽんアイコン" class="icon">
+      </div>
+        <p>不登校。</p>
+    </div> 
+  </div>
+</body>
+</html>
