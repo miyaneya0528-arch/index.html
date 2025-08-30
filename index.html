@@ -74,6 +74,21 @@
       }
     }
   </style>
+  <script>
+    window.addEventListener('load',() => {
+        const characters = document.auerySelectiorAll('.character');
+        let maxWidth = 0;
+
+        characters.forEach(box => {
+            const boxWidth = box.offsetWidth;
+            if (boxWidth > maxWidth) maxWidth = boxWidth;
+        });
+      
+        characyers.forEach(box => {
+            box.style.width = maxWidth + 'px';
+        });
+    });
+  </script>
 </head>
 <body>
 
